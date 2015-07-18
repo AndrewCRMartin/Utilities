@@ -2,6 +2,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
+#include <stdlib.h>
 
 int main(int argc, char **argv)
 {
@@ -9,6 +10,8 @@ int main(int argc, char **argv)
    {
       "/dev/hdc",
       "/dev/usb/scanner0",
+      "/dev/video",
+      "/dev/video0",
       "/dev/mixer",
       "/dev/dsp",
       NULL
@@ -23,6 +26,8 @@ int main(int argc, char **argv)
    
    unlink("/tmp/.esd/socket");
    rmdir("/tmp/.esd");
+
+/*   system("/sbin/service smb restart"); */
    
    return(0);
 }
