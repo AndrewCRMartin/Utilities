@@ -1,0 +1,31 @@
+From Stephen.Ferrari@qntm.com  Thu Jul 23 17:34:10 1998
+From: Stephen Ferrari <Stephen.Ferrari@qntm.com>
+To: "'martin@biochem.ucl.ac.uk'" <martin@biochemistry.ucl.ac.uk>
+Subject: ANSI.C
+Date: Thu, 23 Jul 1998 09:31:57 -0700
+Mime-Version: 1.0
+Content-Type: text/plain;       charset="iso-8859-1"
+
+int disk_buffer_attempt_access_swap(currdisk,currdiskreq)
+disk *currdisk;
+diskreq *currdiskreq;
+{
+
+int disk_buffer_attempt_access_swap(disk *currdisk,
+                                    diskreq *currdiskreq)
+{
+
+---------------------------------------------------------------
+
+void disk_activate_read(currdisk,currdiskreq,setseg,ok_to_check_bus)
+disk* currdisk;
+diskreq* currdiskreq;
+int setseg;
+int ok_to_check_bus;
+{
+
+void disk_activate_read(disk* *currdisk,
+                        diskreq* *currdiskreq,
+                        int setseg,
+                        int ok_to_check_bus)
+{
